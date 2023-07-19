@@ -88,4 +88,4 @@ To do anything with messaging though, you first have to setup your email to work
 
 8. Set the variable eml in settings.py to the email connected to your app password
 
-[If this doesn't work for you check this page](https://support.google.com/mail/answer/185833?hl=en)
+[If this doesn't work for you, check this page](https://support.google.com/mail/answer/185833?hl=en)
