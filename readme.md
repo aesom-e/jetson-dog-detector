@@ -53,8 +53,9 @@ sudo chmod 700 main.py
 
 Inside the directory both main.py and settings.py are in, run this command:
 
+```sh
 ./main.py /dev/video0
-
+```
 This runs the program on the first camera plugged in to your board
 
 ## Settings
