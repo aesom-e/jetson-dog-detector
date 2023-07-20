@@ -31,10 +31,6 @@ dogs = ["retriever", "cocker" "weimaraner", "terrier", "dog", "basset", "hound",
 
 waitto = 0
 
-def saveimage(cudaimage, filename):
-	array = cudaToNumpy(cudaimage)
-	imsave(filename, array)
-
 def run(img):
 	settings.ondog()
 	global waitto
@@ -55,7 +51,7 @@ def run(img):
 				if settings.includeimage:
 					imgmsg = MIMEText("<br><br><img src='cid:image1'>", "html")
 					msg.attach(imgmsg)
-					saveimage(img, "img.png")
+					imsave("img.png", cudaToNumpy(img))
 					f = open("img.png", "rb")
 					msgImage = MIMEImage(f.read())
 					f.close()
