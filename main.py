@@ -23,8 +23,6 @@ except:
 	parser.print_help()
 	sys.exit(0)
 
-time.sleep(1)
-
 net = imageNet("googlenet", sys.argv)
 
 inpt = videoSource(args.input, argv=sys.argv)
