@@ -127,7 +127,9 @@ cd build
 cmake ../
 ```
 
-Select the default options then once the window has closed run these commands
+Select the default options
+
+Once the window has closed run these commands
 
 ```sh
 make
