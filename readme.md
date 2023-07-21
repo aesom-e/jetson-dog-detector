@@ -112,32 +112,7 @@ print("Email sent")
 
 ## Prerequisites
 
-On your board, run these commands:
-
-```sh 
-cd ~
-sudo apt-get update
-sudo apt-get install git cmake
-git clone --recursive https://github.com/dusty-nv/jetson-inference
-cd jetson-inference
-git submodule update --init
-sudo apt-get install libpython3-dev python3-numpy
-mkdir build
-cd build
-cmake ../
-```
-
-Select the default options
-
-Once the window has closed run these commands
-
-```sh
-make
-sudo make install
-sudo ldconfig
-```
-
-Then install required libraries
+First, install required libraries
 
 ```sh
 sudo apt-get install python-scipy
