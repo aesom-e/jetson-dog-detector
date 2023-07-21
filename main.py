@@ -34,9 +34,9 @@ waitto = 0
 def run(img):
 	settings.ondog()
 	global waitto
-	print("Detected dog")
 	timestamp = int(round(time.time()))
 	if timestamp > waitto:
+		print("Detected dog")
 		waitto = timestamp + settings.timeoutSeconds
 		server = smtplib.SMTP_SSL("smtp.gmail.com")
 		server.login(settings.eml, settings.passwd)
